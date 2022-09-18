@@ -11,11 +11,11 @@ import regex as re
 def load_train_data(sentiment):
     data = open(r"data_train\train_"+ sentiment + ".txt","r",encoding="utf8")
     if sentiment == "anger":        
-        threshold = 0.400
+        threshold = 0.500
     elif sentiment == "fear":
-        threshold = 0.400
+        threshold = 0.500
     elif sentiment == "sadness":
-        threshold = 0.400
+        threshold = 0.500
     elif sentiment == "joy":
         threshold = 0.444
     else:

@@ -6,6 +6,7 @@ import json
 import numpy as np
 import nltk
 import train as t
+from pydantic import BaseModel
 
 def random_line(fname):
     lines = open(fname).read().splitlines()
@@ -72,6 +73,7 @@ app=FastAPI()
 async def root():
     return {"Welcome_message": "Here I am  your mood guesser bot,I will send you jokes and memes which will make you happy!"}
 
+
 # input_mood = input("Hi :) How are you feeling today ?  ")
 @app.post("/mood")
 async def mood_guessing(input_mood :str ):
@@ -80,7 +82,7 @@ async def mood_guessing(input_mood :str ):
                             detail = "Please Provide a valid text message")
     mood= classify(input_mood)
     # print("\n")
-    if mood[0][0] == "anger" or mood[0][0] == "sadness" or mood[0][0] == "fear":
+    if (mood[0][0] == "anger" or mood[0][0] == "sadness" or mood[0][0] == "fear" ) or (mood[0][0] =="joy" and mood[0][1]<=0.3 and mood[0][1]>=0.2):
         l=random_line('lines.txt')
         flag=True;
     else :
@@ -99,10 +101,14 @@ async def mood_guessing(input_mood :str ):
         elif i[0] =="anger":
             if i[1] <0.5:
                 i[0]="disturbed"
+    l:str 
+    # mood:list
+    flag:bool
 
     return { "mood":input_mood ,
               "reply"   : l ,
-              "Analytics_of_Prediction" : mood
+            #   "Analytics_of_Prediction" : mood ,  
+              "flag" : flag
         }
 
 
