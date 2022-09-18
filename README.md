@@ -8,7 +8,7 @@
   <h3 align="center">Wecare - The HealthVerse</h3>
 
   <p align="center">
-    <a href="https://placed32.vercel.app/" target="blank">Live Demo</a> |
+    <a href="https://wecare32.vercel.app/" target="blank">Live Demo</a> |
     <a href="https://github.com/Sreetama2001/WeCare_Hackit/issues" target="blank">Report Bug</a> |
     <a href="https://github.com/Sreetama2001/WeCare_Hackit/issues" target="blank">Request Feature</a>
   </p>
@@ -173,6 +173,8 @@ Team Name - Hackit
 Leader - [Sreetama](mailto:fool100abc@gmail.com)
 
 Project Link: [Wecare](https://wecare32.vercel.app/)
+
+Video Link : [Wecare](https://www.youtube.com/watch?v=xerCwrJMf90)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
