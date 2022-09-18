@@ -1,7 +1,7 @@
 # WeCare Healthverse
 
 <div align="center">
-  <a id="top" href="https://placed32.vercel.app/" target="blank">
+  <a id="top" href="https://wecare32.vercel.app/" target="blank">
     <img src="https://user-images.githubusercontent.com/86917304/190920826-2209d78d-272e-496a-b791-6968307df2cb.png" width="100px" alt="">
   </a>
 
@@ -172,7 +172,7 @@ Team Name - Hackit
 
 Leader - [Sreetama](mailto:fool100abc@gmail.com)
 
-Project Link: [Wecare](https://placed32.vercel.app/)
+Project Link: [Wecare](https://wear32.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
