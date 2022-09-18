@@ -24,12 +24,12 @@ const Home = () => {
 					<div>
 						<Link to="/chatbot">
 							<button className="btn" style={{ margin: "20px" }}>
-								Feelling ill...?
+								Feelling Ill...?
 							</button>
 						</Link>
 						<Link to="/funbot">
 							<button className="btn" style={{ margin: "20px" }}>
-								ligth your mood
+								Lite Your Mood
 							</button>
 						</Link>
 					</div>
