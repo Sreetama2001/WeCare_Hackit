@@ -1,0 +1,38 @@
+@import '../mixins/_mixin.scss';
+
+.hero-section{
+    background-color: $color_3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .hero-content{
+        @include center;
+        flex-direction: column;
+        text-align: center;
+        h1{
+        font-family: $Lato;
+        font-size: 3rem;
+        color: $white;
+        margin-bottom: 1rem;
+        }
+        p{
+        color: #fff;
+        margin-bottom: 1rem;
+        }
+        .btn{
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background: $color_5;
+        color: #000;
+        border: none;
+        text-decoration: none;
+        border-radius: 100px;
+        }
+        .btn:hover{
+        background: $color_1;
+        color: #fff;
+        }
+    }
+}

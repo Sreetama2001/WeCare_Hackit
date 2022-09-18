@@ -1,0 +1,45 @@
+@import "./variables/colors";
+@import "./base/reset";
+@import "./variables/fonts";
+@import "./base/base";
+
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    //overflow-x: hidden;
+    overscroll-behavior-y: none;
+    // scrollbar-width: none; /* for Firefox */  
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+// @import "components/heroSection";
+// @import "components/heroSection";
+@import "components/home";
+@import "components/header";
+@import "components/contact";
+@import "components/footer";
+@import "components/dashboard";
+@import "components/chatbot";
+@import "components/userform";
+@import "components/about";
+// @import "components/header";
+// @import "components/header";
+// @import "components/header";
+
+
