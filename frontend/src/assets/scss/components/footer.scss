@@ -1,0 +1,29 @@
+
+footer {
+    padding: 100px 100px;
+    small{
+        color: $white;
+        font-family: $Lato;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .social-links ul {
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         display: flex;
+
+         li {
+              margin: 1rem;
+              text-align: center;
+
+              a {
+                   font-size: 1.5rem;
+                   color: $white;
+                   display: block;
+              }
+         }
+    }
+}
+
