@@ -172,7 +172,7 @@ Team Name - Hackit
 
 Leader - [Sreetama](mailto:fool100abc@gmail.com)
 
-Project Link: [Wecare](https://wear32.vercel.app/)
+Project Link: [Wecare](https://wecare32.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
