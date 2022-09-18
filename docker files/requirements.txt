@@ -1,0 +1,16 @@
+vaderSentiment
+numpy
+fastapi
+nltk
+uvicorn
+scipy
+scikit-learn
+matplotlib
+pandas
+uvicorn
+gunicorn==19.9.0
+uvloop
+httptools
+pydantic
+matplotlib
+
