@@ -11,7 +11,7 @@ So we decided to make a chatbot to provide 24*7 assistance.
 
 
 ### Technologies Used
-1. **Frontend Framework**   : `React` , `react-router-dom`,`react-toastify`,`SCSS`
+1. **Frontend Framework**   : `React` , `react-router-dom`,`react-toastify`,`SASS`
 2. **Database and Storage** : `Firestore`
 3. **Authentication**       :  `Firebase`
 4. **Development**          : `FastAPI` , `Docker`       
