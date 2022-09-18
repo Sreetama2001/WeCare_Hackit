@@ -32,6 +32,70 @@ We have here modernized our healthcare system through  WeCare Fun Bot , WeCare C
 
 ## Let's do a walkthrough of my app
 
+## **Fill out the details as such your gender and age**
+
+
+
+![Welcome](images\welcome_page.jpg)
+
+
+
+## **Fill in all necessary information to track  your previous history of illness**
+
+
+
+![Welcome](images\patient.jpg)
+
+
+
+## **Now Fill in the Symtopms you likely have**
+
+
+
+![Welcome](images\symtom.jpg)
+
+
+
+
+## **Hurray ! We got the results**
+
+**Here we see we have got a diagonis report and possibility of having the disease based on the patients track record of previous illness along with the other symtoms of that disease**
+
+
+*Add_in : You can also learn about the disease directly by clicking on info*
+
+
+
+![Welcome](images\disease_report.jpg)
+
+
+
+
+
+## **Here we have our Joke bot ! Joke_bot helps you to get rid of the stress troubling you**
+
+
+
+![Welcome](images\joke_bot.jpg)
+
+
+
+
+## **Doctor's call is final, So do check yourself up with doctor!!**
+
+
+
+![Welcome](images\google_form.jpg)
+
+
+
+
+
+
+**THANK YOU** 
+
+
+
 
 
 
