@@ -9,3 +9,17 @@ As per the Lancet [report](https://www.thelancet.com/journals/lancet/article/PII
 
 ## Technologies Used :
 
+1. **Frontend frameworks**: `React` `SASS` `react-router-dom` `react-toastify` `react-helmet`
+
+2. **Authenciation**      : `Firebase`
+
+3. **Database and storage**: `Firestore`
+
+4. **Services**            : `Azure` `JOKE API` `Postman` `Kaggle` `Vercel` 
+
+5. **Deployment**          : `Docker` `FastAPI`
+
+6. **ML Frameworks**       : `Numpy` `Pandas` `Tensorflow` `Sklearn` `nltk` 
+
+
+## Let's do a walkthrough of my app
