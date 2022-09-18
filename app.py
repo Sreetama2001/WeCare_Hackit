@@ -7,6 +7,20 @@ import numpy as np
 import nltk
 import train as t
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+
+app=FastAPI()
+
+origins = [
+  "*"
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 def random_line(fname):
     lines = open(fname).read().splitlines()
