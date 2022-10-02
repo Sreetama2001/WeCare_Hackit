@@ -176,6 +176,14 @@ Project Link: [Wecare](https://wecare32.vercel.app/)
 
 Video Link : [Wecare](https://www.youtube.com/watch?v=xerCwrJMf90)
 
+## Team Members: 
+
+- [Sreetama Ghosh Hazar](https://github.com/Sreetama2001)
+- [Suresh Kumar](https://github.com/sureshk-15)
+- [Pransu Jain](https://github.com/Pranshu321)
+- [Mohammad Sami Shaikh](https://github.com/MSamiDev)
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
