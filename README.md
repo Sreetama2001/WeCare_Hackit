@@ -180,7 +180,7 @@ Video Link : [Wecare](https://www.youtube.com/watch?v=xerCwrJMf90)
 
 - [Sreetama Ghosh Hazar](https://github.com/Sreetama2001)
 - [Suresh Kumar](https://github.com/sureshk-15)
-- [Pransu Jain](https://github.com/Pranshu321)
+- [Pranshu Jain](https://github.com/Pranshu321)
 - [Mohammad Sami Shaikh](https://github.com/MSamiDev)
 
 
