@@ -17,7 +17,7 @@
 ---
 
 ## The motivation:
-As per the Lancet [report](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)31668-4/fulltext) 1.6 million Indians died due to poor quality of care in 2016. And nearly twice as many as due to non-utilisation of healthcare services(838,000 persons) that why we visualized to make the healthcare system more mobile and easy available with 27*4 capabilities. 
+As per the Lancet [report](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)31668-4/fulltext) 1.6 million Indians died due to poor quality of care in 2016. And nearly twice as many as due to non-utilisation of healthcare services(838,000 persons) that why we visualized to make the healthcare system more mobile and easy available with 27*7 capabilities. 
 
 <!-- <img
   src=""
@@ -175,6 +175,14 @@ Leader - [Sreetama](mailto:fool100abc@gmail.com)
 Project Link: [Wecare](https://wecare32.vercel.app/)
 
 Video Link : [Wecare](https://www.youtube.com/watch?v=xerCwrJMf90)
+
+## Team Members: 
+
+- [Sreetama Ghosh Hazar](https://github.com/Sreetama2001)
+- [Suresh Kumar](https://github.com/sureshk-15)
+- [Pranshu Jain](https://github.com/Pranshu321)
+- [Mohammad Sami Shaikh](https://github.com/MSamiDev)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
