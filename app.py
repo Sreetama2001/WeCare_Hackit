@@ -11,15 +11,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app=FastAPI()
 
-origins = [
-  "*"
-]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
+    allow_origins=['*']
 )
 
 def random_line(fname):
@@ -81,7 +78,6 @@ def classify(sentence, show_details=False):
     # print ("%s \n classification: %s \n" % (sentence, return_results))
     return return_results
 
-app=FastAPI()
 
 @app.get("/")
 async def root():

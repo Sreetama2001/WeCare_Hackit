@@ -8,7 +8,10 @@ numpy = "*"
 nltk = "*"
 sklearn = "*"
 matplotlib = "*"
+flask = "*"
+flask-cors = "*"
 fastapi = "*"
+pydantic = "*"
 
 [dev-packages]
 
