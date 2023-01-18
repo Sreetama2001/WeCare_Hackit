@@ -79,18 +79,24 @@ def classify(sentence, show_details=False):
     return return_results
 
 
+class Mood (BaseModel):
+    mood:str
+
+def get_mood(input_mood:Mood):
+    return input_mood.mood
+
 @app.get("/")
 async def root():
-    return {"Welcome_message": "Here I am  your mood guesser bot,I will send you jokes and memes which will make you happy!"}
+    return {"Welcome_message": "Here I am  your mood guesser bot, I will send you jokes and memes which will make you happy!"}
 
 
 # input_mood = input("Hi :) How are you feeling today ?  ")
 @app.post("/mood")
-async def mood_guessing(input_mood :str ):
-    if(not(input_mood)):
+async def mood_guessing(input_mood :Mood ):
+    if(not(get_mood(input_mood))):
         raise HTTPException(status_code=400, 
                             detail = "Please Provide a valid text message")
-    mood= classify(input_mood)
+    mood=classify(get_mood(input_mood))
     # print("\n")
     if (mood[0][0] == "anger" or mood[0][0] == "sadness" or mood[0][0] == "fear" ) or (mood[0][0] =="joy" and mood[0][1]<=0.3 and mood[0][1]>=0.2):
         l=random_line('lines.txt')
@@ -115,9 +121,7 @@ async def mood_guessing(input_mood :str ):
     # mood:list
     flag:bool
 
-    return { "mood":input_mood ,
-              "reply"   : l ,
-            #   "Analytics_of_Prediction" : mood ,  
+    return {  "reply"   : l , 
               "flag" : flag
         }
 
