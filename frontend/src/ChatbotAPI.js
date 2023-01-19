@@ -91,9 +91,10 @@ const API = {
   
 			if (flag) {
 			  // Call the joke API
-			  const jokeResponse = await axios.get('https://official-joke-api.appspot.com/random_joke');
+			  const jokeResponse = await axios.get('https://official-joke-api.appspot.com/random_joke'); // flag-- true -- red else blue  // joke next line // have good day next line
 			  const { setup, punchline } = jokeResponse.data;
-			  resolve(`${reply} ${setup} ${punchline}`);
+			  resolve(`${reply}`);
+			  resolve(`${setup} ${punchline}`);
 			} else {
 			  resolve(`${reply} Have a good day!`);
 			}
@@ -107,3 +108,5 @@ const API = {
   };
   
 export default API;
+
+// uvicorn app.app:app --reload 
