@@ -10,10 +10,9 @@ import API from "../ChatbotAPI";
 
 // import "../assets/scss/components/chatbot.scss"
 
-
 const ChatBot = () => {
 	const [messages, setMessages] = useState([]);
-    
+
 	useEffect(() => {
 		async function loadWelcomeMessage() {
 			setMessages([
@@ -32,6 +31,7 @@ const ChatBot = () => {
 			<BotMessage
 				key={messages.length + 2}
 				fetchMessage={async () => await API.GetChatbotResponse(text)}
+				flag={async () => await API.GetChatbotResponse(text)}
 			/>
 		);
 		setMessages(newMessages);
@@ -39,18 +39,13 @@ const ChatBot = () => {
 
 	return (
 		<div className="body">
-		<header className="header">
-			Wecare Automated Chat
-		</header>
-		<div className="chatbot">
-			<Messages messages={messages} />
-			<Input onSend={send} />
-		</div>
+			<header className="header">Wecare Automated Chat</header>
+			<div className="chatbot">
+				<Messages messages={messages} />
+				<Input onSend={send} />
+			</div>
 		</div>
 	);
 };
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<ChatBot />, rootElement);
 
 export default ChatBot;

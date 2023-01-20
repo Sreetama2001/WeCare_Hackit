@@ -4,19 +4,20 @@
 
 .body{
 	background-color: #002f50;
-	// width: 100vw;
+	width: 100vw;
+	height: 100vh;
 }
 
 .chatbot {
 	// font-family: monospace;
 	border-radius: 20px;
-	box-shadow: 10px 12px 24px 10px #{$color_5};
+	// box-shadow: 10px 12px 24px 10px #{$color_5};
 	background: #f5f8fb;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 30px;
 	margin-bottom: 50px;
-	height: 85vh;
+	height: 80vh;
 	text-align: center;
 	display: flex;
 	flex-flow: column;

@@ -22,7 +22,7 @@ export default function Input({ onSend }) {
           value={text}
           placeholder="Enter your message here"
         />
-        <button>
+        <button style={{marginTop:"20px"}}>
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
