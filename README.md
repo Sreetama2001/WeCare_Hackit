@@ -92,7 +92,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## **Welcome Your Web app**
 
-![image](https://user-images.githubusercontent.com/86917304/190920522-992303a5-a233-431f-a851-f2b19fa402b5.png)
+![image](https://user-images.githubusercontent.com/73426684/213864866-9ae0d35f-2e26-4446-884a-f1dbdf039bf2.jpg)
 
 
 ## Here we have our Joke bot ! Joke_bot helps you to get rid of the stress troubling you
@@ -143,8 +143,9 @@ _Below is an example of how you can instruct your audience on installing and set
 ### Deskstop View
 ![image](https://user-images.githubusercontent.com/86917304/190920646-b3ddd488-9d46-41fa-b167-173541c76426.png)
 
-### Phone View
-![Welcome](./images/google_form.jpg)
+### Mobile View of Doctor's Dashboard
+![Welcome](https://user-images.githubusercontent.com/73426684/213864966-5869f035-222c-4b1a-b853-830604d53ab5.jpg)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
