@@ -39,17 +39,17 @@ We have here modernized our healthcare system through  WeCare Fun Bot , WeCare C
 
 ## Technologies Used :
 
-1. **Frontend frameworks** : `React` `SASS` `react-router-dom` `react-toastify` `react-helmet`
+1. **Frontend frameworks** : `React` ,  `SASS` , `react-router-dom` , `react-toastify` ,  `react-helmet`
 
 2. **Authenciation**       : `Firebase`
 
 3. **Database and storage**: `Firestore`
 
-4. **Services**            : `Azure` `JOKE API` `Postman` `Kaggle` `Vercel` 
+4. **Services**            : `Azure` , `JOKE API` , `Postman` , `Kaggle` , `Vercel` 
 
-5. **Deployment**          : `Docker` `FastAPI`
+5. **Deployment**          : `Docker` , `FastAPI`
 
-6. **ML Frameworks**       : `Numpy` `Pandas` `Tensorflow` `Sklearn` `nltk` 
+6. **ML Frameworks**       : `Numpy` , `Pandas` , `Tensorflow` , `Sklearn` , `nltk` 
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -71,12 +71,18 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
     npm i 
    ```
-   
+
 3. Now you have define own firebase project config at `firebase/firebaseconfig.js`.
 
-  ![image](https://user-images.githubusercontent.com/86917304/183728317-30372103-f0d7-4e99-b12c-7f0cd825ea18.png)
+   ![image](https://user-images.githubusercontent.com/86917304/183728317-30372103-f0d7-4e99-b12c-7f0cd825ea18.png)
 
-4. After all steps defined above you can run command `npm start` to run application at `localhost:3000`.
+4. Open another terminal and run the Chatbot API at `localhost:8000`
+  
+    ```
+    uvicorn app.app:app --reoload
+    ```
+
+5. After all steps defined above you can run command int the previous terminal `npm start` to run application at `localhost:3000`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -133,7 +139,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-![Welcome](./images/joke_bot.jpg)
+![Welcome]()
 
 
 
