@@ -71,7 +71,6 @@ const API = {
 	GetChatbotResponse: async (message) => {
 		return new Promise(async (resolve, reject) => {
 			try {
-				//   resolve("I am  your mood guesser bot 😀, I will send you jokes if you are sad ;)");
 				if (
 					message.toLowerCase() === "hi" ||
 					message.toLowerCase() === "hello" ||
@@ -100,10 +99,11 @@ const API = {
 						const { setup, punchline } = jokeResponse.data;
 						// resolve(`${reply}`);
 						resolve(
-							`${reply} here is your joke : <br/> <br/> Setup : ${setup} <br/> <br/> Joke : ${punchline}`
+							`${reply} Here is your joke : <br/> <br/> Setup : ${setup} <br/> <br/> Joke : ${punchline}`
 						);
 					} else {
-						resolve(`${reply} Have a good day!`);
+						resolve(`${reply} Try me again 😇!`);
+						// resolve(`I am  your mood guesser bot 😀, I will send you jokes if you are sad ;)!`);
 					}
 				}
 			} catch (error) {
