@@ -90,12 +90,18 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Let's do a walkthrough of my app
 
-## Welcome Your Web app
+## **Welcome Your Web app**
 
 ![image](https://user-images.githubusercontent.com/86917304/190920522-992303a5-a233-431f-a851-f2b19fa402b5.png)
 
 
-## **Fill out the details as such your gender and age**
+## Here we have our Joke bot ! Joke_bot helps you to get rid of the stress troubling you
+
+
+![Welcome](https://user-images.githubusercontent.com/73426684/213849366-0464688a-08db-4086-a13b-ee3125232740.jpg)
+
+
+## Fill out the details as such your gender and age
 
 
 
@@ -103,7 +109,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## **Fill in all necessary information to track  your previous history of illness**
+## Fill in all necessary information to track  your previous history of illness
 
 
 
@@ -111,7 +117,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## **Now Fill in the Symtopms you likely have**
+## Now Fill in the Symtopms you likely have
 
 
 
@@ -120,7 +126,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## **Hurray ! We got the results**
+## Hurray ! We got the results
 
 **Here we see we have got a diagonis report and possibility of having the disease based on the patients track record of previous illness along with the other symtoms of that disease**
 
@@ -132,19 +138,7 @@ _Below is an example of how you can instruct your audience on installing and set
 ![Welcome](./images/disease_report.jpg)
 
 
-
-
-
-## **Here we have our Joke bot ! Joke_bot helps you to get rid of the stress troubling you**
-
-
-
-![Welcome]()
-
-
-
-
-## **Doctor's call is final, So do check yourself up with doctor!!**
+## Doctor's call is final, So do check yourself up with doctor!!
 
 ### Deskstop View
 ![image](https://user-images.githubusercontent.com/86917304/190920646-b3ddd488-9d46-41fa-b167-173541c76426.png)
