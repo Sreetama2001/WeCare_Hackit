@@ -22,7 +22,7 @@ const Dashboard = () => {
 	async function DoctorRegistration(e) {
 		e.preventDefault();
 		await setDoc(doc(db, "Doctor", doctor.Uid), doctor).then(() => {
-			toast.success('Profile Updated !!', {
+			toast.success(' Profile Updated !!', {
 				position: "bottom-right",
 				autoClose: 5000,
 				hideProgressBar: false,

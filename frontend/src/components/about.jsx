@@ -25,8 +25,8 @@ const About = () => {
 						<h2 className="section-title" style={{ fontSize: "3rem" }}>About Wecare</h2>
 						<p>
 							Compassion , expertise and experience are qualities to look for when choosing a care team for your
-							child , adolescent or young adult with cancer Trust us to provide comprehensive pediatric cancer care
-							close to home in South Texas and offer innovative cancer treatments
+							child , adolescent or young adult with cancer Trust us to provide comprehensive health care check up 
+							and treatment
 						</p>
 						<p>
 							Rely on our specialists to know the difference between childhood and adult diseases. They
