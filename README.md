@@ -76,9 +76,11 @@ _Below is an example of how you can instruct your audience on installing and set
 
    ![image](https://user-images.githubusercontent.com/86917304/183728317-30372103-f0d7-4e99-b12c-7f0cd825ea18.png)
 
-4. Open another terminal and run the Chatbot API at `localhost:8000`
+4. Open another terminal, install the requirements.txt and run the Chatbot API at `localhost:8000`
   
     ```
+    pip install -r requirements. txt
+    
     uvicorn app.app:app --reoload
     ```
 
@@ -156,7 +158,8 @@ _Below is an example of how you can instruct your audience on installing and set
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+
+**Don't forget to give the project a star! Thanks again!**
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
