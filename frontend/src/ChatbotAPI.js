@@ -60,8 +60,7 @@ async function getMeme() {
 // 						});
 // 				} else {
 // 					// resolve("I am  your mood guesser bot 😀, I will send you jokes if you are sad ? I can your mood for sure ;)");
-					
-				
+
 // 				}
 // 			}, 1000);
 // 		});
@@ -70,43 +69,51 @@ async function getMeme() {
 
 const API = {
 	GetChatbotResponse: async (message) => {
-	  return new Promise(async (resolve, reject) => {
-		try {
-		//   resolve("I am  your mood guesser bot 😀, I will send you jokes if you are sad ;)");
-		  if (message === "hi" || message === "hello" || message === "hey") {
-			resolve(" Hi 👋 ! How was ur Day :) ? ");
-		  }
-		  else if (message === "joke") {
-			// Call the joke API
-			const jokeResponse = await axios.get('https://official-joke-api.appspot.com/random_joke');
-			const { setup, punchline } = jokeResponse.data;
-			resolve(`${setup} ${punchline}`);
-		  }
-		  else {
-			// Call the mood detection API
-			const moodResponse = await axios.post('http://127.0.0.1:8000/mood',{
-                "mood": message
-            });
-			const {flag, reply } = moodResponse.data;
-  
-			if (flag) {
-			  // Call the joke API
-			  const jokeResponse = await axios.get('https://official-joke-api.appspot.com/random_joke'); // flag-- true -- red else blue  // joke next line // have good day next line
-			  const { setup, punchline } = jokeResponse.data;
-			  resolve(`${reply}`);
-			  resolve(`${setup} ${punchline}`);
-			} else {
-			  resolve(`${reply} Have a good day!`);
+		return new Promise(async (resolve, reject) => {
+			try {
+				//   resolve("I am  your mood guesser bot 😀, I will send you jokes if you are sad ;)");
+				if (
+					message.toLowerCase() === "hi" ||
+					message.toLowerCase() === "hello" ||
+					message.toLowerCase() === "hey"
+				) {
+					resolve(" Hi 👋 ! How was ur Day :) ? ");
+				} else if (message === "joke") {
+					// Call the joke API
+					const jokeResponse = await axios.get(
+						"https://official-joke-api.appspot.com/random_joke"
+					);
+					const { setup, punchline } = jokeResponse.data;
+					resolve(`${setup} ${punchline}`);
+				} else {
+					// Call the mood detection API
+					const moodResponse = await axios.post("http://127.0.0.1:8000/mood", {
+						mood: message,
+					});
+					const { flag, reply } = moodResponse.data;
+
+					if (flag) {
+						// Call the joke API
+						const jokeResponse = await axios.get(
+							"https://official-joke-api.appspot.com/random_joke"
+						); // flag-- true -- red else blue  // joke next line // have good day next line
+						const { setup, punchline } = jokeResponse.data;
+						// resolve(`${reply}`);
+						resolve(
+							`${reply} here is your joke : <br/> <br/> Setup : ${setup} <br/> <br/> Joke : ${punchline}`
+						);
+					} else {
+						resolve(`${reply} Have a good day!`);
+					}
+				}
+			} catch (error) {
+				console.log(error);
+				reject(error);
 			}
-		  }
-		} catch (error) {
-		  console.log(error);
-		  reject(error);
-		}
-	  });
+		});
 	},
-  };
-  
+};
+
 export default API;
 
-// uvicorn app.app:app --reload 
+// uvicorn app.app:app --reload
