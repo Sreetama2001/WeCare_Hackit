@@ -39,17 +39,17 @@ We have here modernized our healthcare system through  WeCare Fun Bot , WeCare C
 
 ## Technologies Used :
 
-1. **Frontend frameworks** : `React` `SASS` `react-router-dom` `react-toastify` `react-helmet`
+1. **Frontend frameworks** : `React` ,  `SASS` , `react-router-dom` , `react-toastify` ,  `react-helmet`
 
 2. **Authenciation**       : `Firebase`
 
 3. **Database and storage**: `Firestore`
 
-4. **Services**            : `Azure` `JOKE API` `Postman` `Kaggle` `Vercel` 
+4. **Services**            : `Azure` , `JOKE API` , `Postman` , `Kaggle` , `Vercel` 
 
-5. **Deployment**          : `Docker` `FastAPI`
+5. **Deployment**          : `Docker` , `FastAPI`
 
-6. **ML Frameworks**       : `Numpy` `Pandas` `Tensorflow` `Sklearn` `nltk` 
+6. **ML Frameworks**       : `Numpy` , `Pandas` , `Tensorflow` , `Sklearn` , `nltk` 
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -71,12 +71,20 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
     npm i 
    ```
-   
+
 3. Now you have define own firebase project config at `firebase/firebaseconfig.js`.
 
-  ![image](https://user-images.githubusercontent.com/86917304/183728317-30372103-f0d7-4e99-b12c-7f0cd825ea18.png)
+   ![image](https://user-images.githubusercontent.com/86917304/183728317-30372103-f0d7-4e99-b12c-7f0cd825ea18.png)
 
-4. After all steps defined above you can run command `npm start` to run application at `localhost:3000`.
+4. Open another terminal, install the requirements.txt and run the Chatbot API at `localhost:8000`
+  
+    ```
+    pip install -r requirements. txt
+    
+    uvicorn app.app:app --reoload
+    ```
+
+5. After all steps defined above you can run command int the previous terminal `npm start` to run application at `localhost:3000`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,12 +92,18 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Let's do a walkthrough of my app
 
-## Welcome Your Web app
+## **Welcome Your Web app**
 
-![image](https://user-images.githubusercontent.com/86917304/190920522-992303a5-a233-431f-a851-f2b19fa402b5.png)
+![image](https://user-images.githubusercontent.com/73426684/213864866-9ae0d35f-2e26-4446-884a-f1dbdf039bf2.jpg)
 
 
-## **Fill out the details as such your gender and age**
+## Here we have our Joke bot ! Joke_bot helps you to get rid of the stress troubling you
+
+
+![Welcome](https://user-images.githubusercontent.com/73426684/213849366-0464688a-08db-4086-a13b-ee3125232740.jpg)
+
+
+## Fill out the details as such your gender and age
 
 
 
@@ -97,7 +111,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## **Fill in all necessary information to track  your previous history of illness**
+## Fill in all necessary information to track  your previous history of illness
 
 
 
@@ -105,7 +119,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## **Now Fill in the Symtopms you likely have**
+## Now Fill in the Symtopms you likely have
 
 
 
@@ -114,7 +128,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## **Hurray ! We got the results**
+## Hurray ! We got the results
 
 **Here we see we have got a diagonis report and possibility of having the disease based on the patients track record of previous illness along with the other symtoms of that disease**
 
@@ -126,25 +140,14 @@ _Below is an example of how you can instruct your audience on installing and set
 ![Welcome](./images/disease_report.jpg)
 
 
-
-
-
-## **Here we have our Joke bot ! Joke_bot helps you to get rid of the stress troubling you**
-
-
-
-![Welcome](./images/joke_bot.jpg)
-
-
-
-
-## **Doctor's call is final, So do check yourself up with doctor!!**
+## Doctor's call is final, So do check yourself up with doctor!!
 
 ### Deskstop View
 ![image](https://user-images.githubusercontent.com/86917304/190920646-b3ddd488-9d46-41fa-b167-173541c76426.png)
 
-### Phone View
-![Welcome](./images/google_form.jpg)
+### Mobile View of Doctor's Dashboard
+![Welcome](https://user-images.githubusercontent.com/73426684/213864966-5869f035-222c-4b1a-b853-830604d53ab5.jpg)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -155,7 +158,8 @@ _Below is an example of how you can instruct your audience on installing and set
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+
+**Don't forget to give the project a star! Thanks again!**
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)

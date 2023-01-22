@@ -19,17 +19,17 @@ const Home = () => {
 
 			<section className="hero-section">
 				<div className="hero-content">
-					<h1>Feelling ill..?</h1>
-					<h1> No worries, Chat with our MedBot </h1>
+					<h1>Feeling ill..?</h1>
+					<h1> Get your Health & Mood check up </h1>
 					<div>
 						<Link to="/chatbot">
 							<button className="btn" style={{ margin: "20px" }}>
-								Feelling Ill...?
+								Health 
 							</button>
 						</Link>
 						<Link to="/funbot">
 							<button className="btn" style={{ margin: "20px" }}>
-								Lite Your Mood
+								Mood
 							</button>
 						</Link>
 					</div>

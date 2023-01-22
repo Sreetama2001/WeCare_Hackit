@@ -83,6 +83,8 @@ class Mood (BaseModel):
 
 def get_mood(input_mood:Mood):
     return input_mood.mood
+def convert (text :str):
+    return ([i.lower() for i in text.split()])
 
 @app.get("/")
 async def root():
@@ -95,34 +97,39 @@ async def mood_guessing(input_mood :Mood ):
     if(not(get_mood(input_mood))):
         raise HTTPException(status_code=400, 
                             detail = "Please Provide a valid text message")
-    mood=classify(get_mood(input_mood))
-    # print("\n")
-    if (mood[0][0] == "anger" or mood[0][0] == "sadness" or mood[0][0] == "fear" ) or (mood[0][0] =="joy" and mood[0][1]<=0.3 and mood[0][1]>=0.2):
-        l=random_line('lines.txt')
-        flag=True;
-    else :
-        l=random_line('lines1.txt')
-        flag=False;
-    for i in mood :
-        if i[0] == "sadness":
-            if i[1]<0.5:
-                i[0]= "tired and disturbed"
-        elif i[0]=="joy":
-            if i[1] <0.5:
-                i[0]="Mood Alright"
-        elif i[0] =="fear":
-            if i[1] <0.5:
-                i[0]="anxiety"
-        elif i[0] =="anger":
-            if i[1] <0.5:
-                i[0]="disturbed"
+
+    tokens=["hello",'hi','ohk','okay','byee','bye','nice','good','fine','well','better','bad','sad','not','none']
     l:str 
     # mood:list
     flag:bool
+    if (len((get_mood(input_mood)).split())<=4):
+        lis = convert(get_mood(input_mood))
+        for token in tokens:
+            if token in lis:
+                l = " Hey I can help you out if you are in trouble ! All you need to write your heart out ;)"
+                flag =False
+                break
+            else :
+                l = " Write more clearly about your day , or else it is difficult for me to understand :( "
+                flag=False
 
-    return {  "reply"   : l , 
+    elif(len((get_mood(input_mood)).split())<=7):
+        l= " Please write in more detail, i am here to listen :) " 
+        flag = False
+    else:    
+        mood=classify(get_mood(input_mood))
+        if (mood[0][0] == "anger" or mood[0][0] == "sadness" or mood[0][0] == "fear" ):
+            l=random_line('lines.txt')
+            flag=True;
+        else :
+            l=random_line('lines1.txt')
+            flag=False;
+    
+    return {  "reply" : l , 
               "flag" : flag
-        }
+           }
+
+
 
 
 # if mood == 'anger'
@@ -134,4 +141,17 @@ async def mood_guessing(input_mood :Mood ):
 # fear , sadness , anger , joy , anxiety, tired and disturbed, disturbed , Mood Alright
 
 # input 
-# 
+         
+            # for i in mood :
+            #     if i[0] == "sadness":
+            #         if i[1]<0.5:
+            #             i[0]= "tired and disturbed"
+            #     elif i[0]=="joy":
+            #         if i[1] <0.5:
+            #             i[0]="Mood Alright"
+            #     elif i[0] =="fear":
+            #         if i[1] <0.5:
+            #             i[0]="anxiety"
+            #     elif i[0] =="anger":
+            #         if i[1] <0.5:
+            #             i[0]="disturbed"
