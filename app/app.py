@@ -131,7 +131,6 @@ async def mood_guessing(input_mood :Mood ):
 
 
 
-
 # if mood == 'anger'
 #  fear < 50 ===> anxiety 
 #  sad < 50 ===> tired and disturbed 

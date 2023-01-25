@@ -86,7 +86,7 @@ const API = {
 					resolve(`${setup} ${punchline}`);
 				} else {
 					// Call the mood detection API
-					const moodResponse = await axios.post("http://127.0.0.1:8000/mood", {
+					const moodResponse = await axios.post("https://wecare12.azurewebsites.net/mood", {
 						mood: message,
 					});
 					const { flag, reply } = moodResponse.data;
